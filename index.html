@@ -1,186 +1,210 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
+<html class="dark" lang="zh-Hant"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>The Astral Archive | Seek the Divine</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;family=Manrope:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&amp;family=Manrope:wght@300;400;600&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "outline-variant": "#4a454d",
-                        "tertiary-fixed": "#eedbff",
-                        "inverse-on-surface": "#2c303d",
-                        "on-surface-variant": "#ccc4ce",
-                        "on-surface": "#dfe2f3",
-                        "surface-container-high": "#262a37",
-                        "surface-variant": "#313442",
-                        "on-primary-fixed": "#241a00",
-                        "outline": "#958e98",
-                        "surface-bright": "#353946",
-                        "surface-tint": "#e9c349",
-                        "error-container": "#93000a",
-                        "on-primary-container": "#9a7b00",
-                        "on-secondary-fixed-variant": "#464747",
-                        "on-error": "#690005",
-                        "primary": "#e9c349",
-                        "on-primary-fixed-variant": "#574500",
-                        "surface-container-low": "#171b28",
-                        "on-primary": "#3c2f00",
-                        "on-secondary-container": "#b8b8b8",
-                        "primary-container": "#1a1300",
-                        "on-tertiary-fixed": "#231437",
-                        "tertiary-container": "#1b0b2e",
-                        "on-secondary": "#2f3131",
-                        "surface-container-lowest": "#0a0e1a",
-                        "inverse-surface": "#dfe2f3",
-                        "secondary-fixed": "#e3e2e2",
-                        "secondary-container": "#484949",
-                        "secondary": "#c6c6c6",
-                        "primary-fixed": "#ffe088",
-                        "surface": "#0f131f",
-                        "on-tertiary": "#39294d",
-                        "on-tertiary-container": "#8a769f",
-                        "surface-container-highest": "#313442",
-                        "primary-fixed-dim": "#e9c349",
-                        "tertiary-fixed-dim": "#d4beeb",
-                        "on-secondary-fixed": "#1a1c1c",
-                        "surface-dim": "#0f131f",
-                        "surface-container": "#1b1f2c",
-                        "inverse-primary": "#735c00",
-                        "tertiary": "#d4beeb",
-                        "error": "#ffb4ab",
-                        "on-tertiary-fixed-variant": "#503f65",
-                        "on-error-container": "#ffdad6",
-                        "on-background": "#dfe2f3",
-                        "secondary-fixed-dim": "#c6c6c6",
-                        "background": "#0f131f"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Noto Serif"],
-                        "body": ["Manrope"],
-                        "label": ["Manrope"]
-                    }
-                }
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#f6f5ff",
+                    "on-background": "#e2e2e2",
+                    "surface-container-lowest": "#0e0e0e",
+                    "inverse-surface": "#e2e2e2",
+                    "secondary-fixed-dim": "#e6b4ff",
+                    "surface-container-low": "#1b1b1b",
+                    "on-tertiary-container": "#415aab",
+                    "surface": "#131313",
+                    "background": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#393939",
+                    "primary-fixed-dim": "#e9c400",
+                    "on-primary-container": "#705e00",
+                    "on-surface": "#e2e2e2",
+                    "tertiary-fixed-dim": "#b6c4ff",
+                    "on-primary": "#3a3000",
+                    "on-secondary-fixed-variant": "#66288b",
+                    "inverse-primary": "#705d00",
+                    "surface-variant": "#353535",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005",
+                    "on-secondary": "#4e0673",
+                    "secondary-container": "#692b8e",
+                    "surface-dim": "#131313",
+                    "on-secondary-fixed": "#30004a",
+                    "inverse-on-surface": "#303030",
+                    "secondary-fixed": "#f5d9ff",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#264191",
+                    "on-secondary-container": "#dea1ff",
+                    "outline": "#999077",
+                    "on-tertiary-fixed": "#00164e",
+                    "primary": "#fff6df",
+                    "surface-container": "#1f1f1f",
+                    "on-primary-fixed": "#221b00",
+                    "on-primary-fixed-variant": "#544600",
+                    "tertiary-fixed": "#dce1ff",
+                    "on-surface-variant": "#d0c6ab",
+                    "primary-container": "#ffd700",
+                    "surface-container-high": "#2a2a2a",
+                    "outline-variant": "#4d4732",
+                    "on-tertiary": "#05297a",
+                    "secondary": "#e6b4ff",
+                    "tertiary-container": "#d0d8ff",
+                    "primary-fixed": "#ffe16d",
+                    "surface-container-highest": "#353535",
+                    "surface-tint": "#e9c400"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif TC", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
             }
-        }
+          },
+        },
+      }
     </script>
 <style>
         body { font-family: 'Manrope', sans-serif; }
-        h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
-        .glass-card {
-            background: rgba(49, 52, 66, 0.3);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
+        h1, h2, h3, .serif { font-family: 'Noto Serif TC', serif; }
+        .glass-panel {
+            background: rgba(42, 42, 42, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
         .celestial-glow {
-            box-shadow: 0 0 60px -15px rgba(233, 195, 73, 0.12);
+            background: radial-gradient(circle at center, rgba(147, 51, 234, 0.15) 0%, transparent 70%);
         }
-        .hero-gradient {
-            background: radial-gradient(circle at top center, rgba(233, 195, 73, 0.08) 0%, rgba(15, 19, 31, 0) 60%);
-        }
-        .card-inner-shadow {
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.4);
+        .gold-shimmer {
+            background: linear-gradient(135deg, #ffd700 0%, #ffe16d 50%, #e9c400 100%);
         }
     </style>
 </head>
-<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary">
-<!-- Shared TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-slate-950/20 backdrop-blur-2xl flex justify-between items-center px-12 py-8 transition-all duration-500">
-<div class="text-2xl font-serif text-amber-400 uppercase tracking-[0.25em] font-light">
-            The Astral Archive
-        </div>
-<div class="flex items-center gap-6">
-<button class="text-amber-400 hover:text-amber-200 transition-colors">
-<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
-</button>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+<!-- Global Background Elements -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute top-[-10%] left-[-5%] w-[60%] h-[60%] bg-secondary-container/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-5%] w-[50%] h-[50%] bg-primary-container/5 rounded-full blur-[120px]"></div>
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
 </div>
-</nav>
-<main class="min-h-screen pt-44 pb-24 px-6 md:px-12 hero-gradient overflow-hidden">
+<main class="relative z-10">
 <!-- Hero Section -->
-<section class="max-w-7xl mx-auto text-center mb-32 relative">
-<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[450px] bg-primary/5 blur-[140px] rounded-full pointer-events-none"></div>
-<h1 class="text-5xl md:text-7xl font-headline font-light text-on-surface mb-10 tracking-tight leading-tight">見證<span class="text-primary italic">星軌交織的命運</span></h1>
-<p class="max-w-2xl mx-auto text-lg md:text-xl text-on-surface-variant font-light leading-relaxed mb-12 tracking-wide">步入靜謐的檔案館，解讀星辰的運行、五行的平衡與秘法的智慧。</p>
+<section class="min-h-screen flex flex-col items-center justify-center px-4 md:px-6 pt-16 md:pt-24 pb-20 md:pb-32 max-w-7xl mx-auto text-center">
+<div class="mb-6 md:mb-8 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-outline-variant/30 bg-surface-container-low/50 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary-fixed text-[10px] md:text-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-[8px] md:text-xs font-label tracking-widest text-on-surface-variant uppercase">The Astral Archive</span>
+</div>
+<h1 class="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-black mb-4 md:mb-8 leading-tight tracking-tight bg-gradient-to-b from-primary to-primary-fixed-dim bg-clip-text text-transparent">
+            見證星軌交織的命運
+        </h1>
+<p class="text-sm sm:text-base md:text-2xl text-on-surface-variant max-w-3xl font-light mb-8 md:mb-12 leading-relaxed serif px-4">
+            步入靜謐的檔案館，解讀星辰的運行、五行的平衡與秘法的智慧。
+        </p>
+<!-- Grid Container -->
+<div class="w-full max-w-5xl grid grid-cols-3 gap-2 sm:gap-4 md:gap-8 mt-4 md:mt-12 items-end">
+<!-- Card 1: Horoscopes -->
+<a class="group relative block aspect-[2/3] md:aspect-[3/4] overflow-hidden rounded-lg md:rounded-xl bg-surface-container-low transition-all duration-700 hover:-translate-y-2 md:hover:-translate-y-4" href="https://horoscope-rho-umber.vercel.app/">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-scale duration-700 group-hover:scale-110 opacity-60" data-alt="Deep purple cosmic nebula with shimmering golden star constellations and ancient zodiac symbols floating in velvet darkness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgV7K4-Ee7MjPdJRyv-_Mz9zKB-et1KV9zhCIcYSh-Tf2PxYjSqUjp0Ud41tJ5CAJxEXJixPBTO99ZsbKIiHXUe6GcGAtZTCC6O44efML04Yfx8HXT6SPNInoICep8sEn9VmBZmEcGl8rErxWfqYbE08hgDMtkyv_qTFq2SGu3LQogDIJFHbcgM4I1hurQbwCsMMcRNJ6lb1CWa9ZRca4mCj8ImT5s35TMOc5IHb33se51NC_3Jov3CTFZ_8fdYs-Gge5cYEdG3xGR"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+<div class="absolute inset-0 p-3 md:p-8 flex flex-col justify-end text-left z-10">
+<span class="text-primary-fixed text-[8px] md:text-sm font-label tracking-tighter md:tracking-widest mb-1 md:mb-2 block uppercase">Horoscopes</span>
+<h3 class="text-sm sm:text-base md:text-3xl font-bold text-on-surface leading-tight">星座運勢</h3>
+<p class="text-[10px] md:text-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden md:block mt-2">探索星辰對您每日生活的微細影響。</p>
+<div class="mt-2 md:mt-4 w-6 h-6 md:w-10 md:h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-xs md:text-xl">north_east</span>
+</div>
+</div>
+</a>
+<!-- Card 2: Natal Charts (The Centerpiece) -->
+<a class="group relative block aspect-[2/3] md:aspect-[3/4] overflow-hidden rounded-lg md:rounded-xl bg-surface-container-low transition-all duration-700 md:-translate-y-8 hover:-translate-y-2 md:hover:-translate-y-12" href="https://htmlfile-theta.vercel.app/">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-scale duration-700 group-hover:scale-110 opacity-70" data-alt="Intricate golden astrolabe and celestial map on dark parchment with glowing ethereal lines connecting planetary bodies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8RHndUgE5RvngOvspR7YUauwPKKis7sWtKmqWlfjovHrn_IqiD5B8_jedlfZ86G9jNfKhths9sgDqS2L21B_fD6lcYO1kt9F6RVdXKTTfW6wsBVT7KycjlRefrriw5_XTf_OP0ZeE0tNOOwfv1y-VIU91IIyikX4FFMhv6-BnouYm-NM9SZPFgKBDTqQTIDKt9BRJIEfvEYB7TtOhNZZvpD_dLFaErmIH2gXedZ-EetGwp4_ow8BwzGJ1Bud-n7SSeMVke5dqVlkK"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+<div class="absolute inset-0 p-3 md:p-8 flex flex-col justify-end text-left z-10">
+<span class="text-primary-fixed text-[8px] md:text-sm font-label tracking-tighter md:tracking-widest mb-1 md:mb-2 block uppercase">Natal Charts</span>
+<h3 class="text-sm sm:text-base md:text-3xl font-bold text-on-surface leading-tight">命運星盤</h3>
+<p class="text-[10px] md:text-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden md:block mt-2">解構您出生那一刻的天體座標與生命藍圖。</p>
+<div class="mt-2 md:mt-4 w-6 h-6 md:w-10 md:h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-xs md:text-xl">north_east</span>
+</div>
+</div>
+</a>
+<!-- Card 3: Tarot -->
+<a class="group relative block aspect-[2/3] md:aspect-[3/4] overflow-hidden rounded-lg md:rounded-xl bg-surface-container-low transition-all duration-700 hover:-translate-y-2 md:hover:-translate-y-4" href="https://tarot-nine-lac.vercel.app/">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-scale duration-700 group-hover:scale-110 opacity-60" data-alt="Mystical tarot cards with ornate gold leaf details resting on dark silk fabric illuminated by soft flickering candlelight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfekcM3LjIqhSWLpwUZeP7nqT7IqJKY3qARpVJz3ywHw9FS_ESKgxDtjyvGBd12tFSmlwGdciAxH12fUTLqEaFjbshHNEzLW1b_-bkBQTMU6hiZi3UiOxu-XNV7jQz2tFcgj1Uge6ivYIkJVZzxiq8uNbB5EyibFRZme2Zm5ytzDw8BOykpHnTpsXjDIxYgzMxlEyIWSwLaj11sBkfVA1iLARY6n7d96SyLag66xKxnLJDK1U91FwhTKaO0rCZXZtr4G3-0c21P5l3"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+<div class="absolute inset-0 p-3 md:p-8 flex flex-col justify-end text-left z-10">
+<span class="text-primary-fixed text-[8px] md:text-sm font-label tracking-tighter md:tracking-widest mb-1 md:mb-2 block uppercase">Tarot Wisdom</span>
+<h3 class="text-sm sm:text-base md:text-3xl font-bold text-on-surface leading-tight">命運塔羅</h3>
+<p class="text-[10px] md:text-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden md:block mt-2">透過古老符號與靈覺，洞察當下的因果契機。</p>
+<div class="mt-2 md:mt-4 w-6 h-6 md:w-10 md:h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-xs md:text-xl">north_east</span>
+</div>
+</div>
+</a>
+</div>
 </section>
-<!-- The Three Pillars (Pillar Cards) -->
-<section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
-<!-- Horoscopes Card -->
-<a class="group relative aspect-[3/4.2] rounded-xl overflow-hidden glass-card border border-white/5 transition-all duration-1000 hover:-translate-y-6 hover:border-primary/30 hover:celestial-glow block" href="https://horoscope-rho-umber.vercel.app/">
-<div class="absolute inset-0 opacity-30 grayscale group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-60 transition-all duration-1000 ease-out">
-<img class="w-full h-full object-cover" data-alt="Intricate golden star chart on dark parchment with glowing celestial constellations and mystic geometry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzj2Adt62B9NjMroIGx2FgVfUGsDXU-mi-DfeKQg28Zxo3778SbmiT3Kfk_5TYKv6Bl04trc8KsGn9GJLMh_Gg98ThsqulpPcuKgk1UgmpNmAhGelNynMPhHWA0lfqv7R9-tQyBvsfmauVAtj9ECdLkDv44SCzP21pEkL-_t22SO8zNsCgGGF51bPQC2CRbkV7g60NMuVXFppGB-AzTP2Vc-k9PJEpiMgJ6iMpx-lumFKj9VkE2wuU1fe7jIMCim4W8PV-dyNTa6CC"/>
+<!-- Feature Description / Wisdom Section -->
+<section class="py-32 px-6 relative">
+<div class="max-w-4xl mx-auto text-center">
+<div class="w-px h-24 bg-gradient-to-b from-transparent via-primary/50 to-transparent mx-auto mb-16"></div>
+<h2 class="text-4xl md:text-5xl font-bold text-on-surface mb-12 serif leading-tight">
+                為現代靈魂提供的星際指引
+            </h2>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-[2] serif text-justify md:text-center px-4">
+                星軌檔案連接了古代占卜與現代生活。無論您是在尋求愛情、事業或個人成長的啟發，我們都能提供您深層的冥想見解。在這裡，古老的星學不再是遙不可及的神秘學，而是與您的呼吸同步的生命指南。
+            </p>
+<div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-12 border-y border-outline-variant/10 py-12">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-fixed mb-4 text-3xl">ac_unit</span>
+<span class="text-xs font-label tracking-[0.2em] text-on-surface-variant uppercase">精準算法</span>
 </div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
-<div class="absolute bottom-0 left-0 w-full p-12">
-<div class="mb-6 inline-flex items-center gap-3 text-primary tracking-[0.4em] text-[10px] uppercase font-semibold"><span class="material-symbols-outlined text-sm" data-icon="auto_awesome">auto_awesome</span>黃道十二宮</div>
-<h3 class="text-4xl font-headline text-on-surface mb-5 font-light tracking-wide">星座運勢</h3>
-<p class="text-on-surface-variant font-light mb-8 opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-6 group-hover:translate-y-0 text-sm leading-relaxed">透過行星的排列與古老的星宮，繪製您的命運藍圖。</p>
-<div class="flex items-center gap-3 text-primary font-medium tracking-[0.2em] text-xs uppercase group-hover:gap-5 transition-all duration-300">諮詢星象<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span></div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-fixed mb-4 text-3xl">history_edu</span>
+<span class="text-xs font-label tracking-[0.2em] text-on-surface-variant uppercase">經典傳承</span>
 </div>
-</a>
-<!-- Destiny Chart Card (Modified from Bagua) -->
-<a class="group relative aspect-[3/4.2] rounded-xl overflow-hidden glass-card border border-white/5 transition-all duration-1000 md:mt-16 hover:-translate-y-6 hover:border-primary/30 hover:celestial-glow block" href="https://htmlfile-theta.vercel.app/">
-<div class="absolute inset-0 opacity-30 grayscale group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-60 transition-all duration-1000 ease-out">
-<img class="w-full h-full object-cover" data-alt="Traditional Chinese wooden Bagua compass with intricate trigrams in a zen-like stone garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2GOe3oowP06DD6fyu1B7EAEsUf7x6A46CT5xgOHd0amQy4-ww_KfqCVuY-UDj-7nxuLTwsXp5CXDXoO4QsrBelmayPmm0iS_y3qq7Bz1ihyVG0AkjETdBtMedaqvesW7pPBVv4bQyP-dfYrd6VLGHoa_3afMdv2mka9zSYyFIKO34a7aY2jq4q1OargmhJ1Ne34Xb5s9hAKNI2Zxg6VZB7cQWnCW94q8SdHmWGpksj10PqzFGgME3Xuq_IslFxbZkJR2AQ0tCadVD"/>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-fixed mb-4 text-3xl">visibility</span>
+<span class="text-xs font-label tracking-[0.2em] text-on-surface-variant uppercase">直覺洞察</span>
 </div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
-<div class="absolute bottom-0 left-0 w-full p-12">
-<div class="mb-6 inline-flex items-center gap-3 text-primary tracking-[0.4em] text-[10px] uppercase font-semibold"><span class="material-symbols-outlined text-sm" data-icon="balance">balance</span>元素流轉</div>
-<h3 class="text-4xl font-headline text-on-surface mb-5 font-light tracking-wide">命運星盤</h3>
-<p class="text-on-surface-variant font-light mb-8 opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-6 group-hover:translate-y-0 text-sm leading-relaxed">恢復宇宙平衡，讓您的靈魂與八種基本卦象和諧共鳴。</p>
-<div class="flex items-center gap-3 text-primary font-medium tracking-[0.2em] text-xs uppercase group-hover:gap-5 transition-all duration-300">尋找平衡<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span></div>
-</div>
-</a>
-<!-- Tarot Card (Modified) -->
-<a class="group relative aspect-[3/4.2] rounded-xl overflow-hidden glass-card border border-white/5 transition-all duration-1000 hover:-translate-y-6 hover:border-primary/30 hover:celestial-glow block" href="https://tarot-nine-lac.vercel.app/">
-<div class="absolute inset-0 opacity-30 grayscale group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-60 transition-all duration-1000 ease-out">
-<img class="w-full h-full object-cover" data-alt="A spread of mystical tarot cards with gold-leaf edges on a dark velvet surface with candle light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNlGUgO3pOe8im4Fwmp8OLUqF1Ij9oViNDWTvOfeidwj-F1AYwLsZ9YXiZtdm1Yvx_I83tlHv0_FS1swimSRC4pHic8pqxdWdu7QoAZYVGFNDCJVVOcgNyh0Q0NWgfNvs0tEmlSl8sCKuAdv-eESSfHs_lUoHD2a3ZBbwsxPnDQNwO7tGvLYwFSlXHtrWRYQp7EyGkoHR7IYy4ZHFMo6EF8pap3_bsORQi-T9CAAiyujaeKW2QvLg1Pon__HqjM-5k3Kz7RYXmUGgz"/>
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
-<div class="absolute bottom-0 left-0 w-full p-12">
-<div class="mb-6 inline-flex items-center gap-3 text-primary tracking-[0.4em] text-[10px] uppercase font-semibold"><span class="material-symbols-outlined text-sm" data-icon="style">style</span>神聖秘法</div>
-<h3 class="text-4xl font-headline text-on-surface mb-5 font-light tracking-wide">命運塔羅</h3>
-<p class="text-on-surface-variant font-light mb-8 opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-6 group-hover:translate-y-0 text-sm leading-relaxed">透過大阿卡納與小阿卡納的符號敘事，揭開您旅程中的秘密。</p>
-<div class="flex items-center gap-3 text-primary font-medium tracking-[0.2em] text-xs uppercase group-hover:gap-5 transition-all duration-300">揭示真理<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span></div>
-</div>
-</a>
-</section>
-<!-- Secondary Content Section: Featured Readings -->
-<section class="max-w-7xl mx-auto mt-64 mb-32">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
-<div class="lg:col-span-5">
-<h2 class="text-4xl font-headline font-light text-on-surface mb-8 tracking-tight">為現代靈魂提供的星際指引</h2>
-<p class="text-on-surface-variant mb-12 leading-relaxed font-light tracking-wide">星軌檔案連接了古代占卜與現代生活。無論您是在尋求愛情、事業或個人成長的啟發，我們都能提供您深層的冥想見解。</p>
-</div>
-<div class="lg:col-span-7 grid grid-cols-2 gap-6">
-<div class="rounded-xl overflow-hidden aspect-square h-[450px] border border-white/5">
-<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Deep nebula in outer space with vibrant purple and gold star dust" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkwIHBHXRz8H1ZL_ZVH_FTUBmQstoKBQidMNoz-SEPhl7U5MiUjqu0Cda18VyGoOdCu-5LrmjErMOb4LeUgpaguXcWDqCZtW_sHW6A_fy1Nmc_r_tFKfPTsr1jb0udfNS2XemyANpMxHQ9kSZ6gnDJ-hfxaOnmFK2XnuR_-V5QZySX2vRASM7QFuN5u8qDFO0LhYWGbZ7pQbtP47v-hiPh7m-71903ODWynBLE6pO8GjDdp104lomgOTXa-hSiW2ggtCM-9poX1KT"/>
-</div>
-<div class="rounded-xl overflow-hidden aspect-square h-[450px] mt-16 border border-white/5">
-<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Minimalist zen garden with raked sand and smooth dark stones in moody low light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR2t8pII_8Xr4xuvyV2gKKKW8agER6UgDPSXuB1D6_cr4k9ln-8vUNoNeBsjKuetIXR_wcHa2eiNrhmf2_7UZCyREalLfzHIFG7Ba8kBIFDC2u6i77jj8x-l_o31XjV437mdjWwlLqn2hRWXLnA1736PcE-yZUk6bVWMk6FN-9Jq0whXwbfsEb8OELLT1gPcWb1WW_PHmUZk4RMVJBZNFuit8DsM5OCabVLOA4-2Kvsu3ow8eRk5Xj1clX1PnUqp3SE19jAecsy4tH"/>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary-fixed mb-4 text-3xl">all_inclusive</span>
+<span class="text-xs font-label tracking-[0.2em] text-on-surface-variant uppercase">無限導引</span>
 </div>
 </div>
 </div>
 </section>
 </main>
-<!-- Shared Footer -->
-<footer class="bg-slate-950 w-full py-24 border-t border-amber-400/5 flex flex-col items-center gap-10">
-<div class="text-xl font-serif text-amber-400 tracking-[0.3em] uppercase font-light">The Astral Archive</div>
-<div class="flex gap-16 font-['Manrope'] text-[10px] uppercase tracking-[0.4em]"><a class="text-slate-500 hover:text-amber-200 transition-all duration-500" href="#">隱私政策</a><a class="text-slate-500 hover:text-amber-200 transition-all duration-500" href="#">服務條款</a></div>
-<div class="text-slate-600 font-['Manrope'] text-[9px] uppercase tracking-[0.3em] opacity-40">
-            © 2024 The Astral Archive. All rights reserved.
-        </div>
+<!-- Footer -->
+<footer class="bg-stone-950 w-full border-t border-amber-900/10 pt-32 pb-16 px-12 mt-40 bg-gradient-to-t from-purple-950/10 to-transparent">
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+<div class="text-3xl font-headline text-amber-500 mb-4 tracking-widest">星軌檔案</div>
+<div class="flex flex-wrap justify-center gap-8 mb-12">
+<a class="font-serif text-stone-500 hover:text-amber-200 transition-all duration-500" href="#">隱私條款</a>
+<a class="font-serif text-stone-500 hover:text-amber-200 transition-all duration-500" href="#">命理服務</a>
+<a class="font-serif text-stone-500 hover:text-amber-200 transition-all duration-500" href="#">關於我們</a>
+<a class="font-serif text-stone-500 hover:text-amber-200 transition-all duration-500" href="#">聯繫導師</a>
+</div>
+<div class="h-px w-32 bg-amber-900/20 mb-8"></div>
+<p class="font-serif text-stone-300 antialiased opacity-60 text-sm tracking-widest">
+            © 2024 天體門戶 THE CELESTIAL CURATOR. 萬物皆有定數。
+        </p>
+</div>
 </footer>
 </body></html>
