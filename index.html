@@ -214,7 +214,41 @@ alt="logo" border="0" />
 </div>
 </section>
 <!-- Wisdom Section -->
-<section class="py-24 px-6 relative">
+<section class="w-full max-w-5xl mx-auto px-4"><a class="block" href="https://lin.ee/rlzTD9b" target="_blank">
+<div class="glass-panel border border-primary/30 rounded-xl overflow-hidden relative group shadow-[0_0_50px_rgba(105,43,142,0.15)]">
+<div class="relative w-full aspect-[32/3] md:aspect-[96/9]" id="banner-carousel">
+<!-- Carousel Item 1 -->
+<div class="carousel-item absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
+<img alt="Banner 1" class="w-full h-full object-cover" src="https://i.ibb.co/Jw2qwt6H/7.jpg"/>
+</div>
+<!-- Carousel Item 2 -->
+<div class="carousel-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+<img alt="Banner 2" class="w-full h-full object-cover" src="https://i.ibb.co/67mtXKvX/8.jpg"/>
+</div>
+<!-- Carousel Item 3 -->
+<div class="carousel-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+<img alt="Banner 3" class="w-full h-full object-cover" src="https://i.ibb.co/DHB0WpH6/9.jpg"/>
+</div>
+<!-- Overlay for mystical theme consistency -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface/20 to-transparent pointer-events-none"></div>
+</div>
+</div>
+</a>
+<script>
+  (function() {
+    let currentIndex = 0;
+    const items = document.querySelectorAll('#banner-carousel .carousel-item');
+    const totalItems = items.length;
+
+    function showNextItem() {
+      items[currentIndex].classList.replace('opacity-100', 'opacity-0');
+      currentIndex = (currentIndex + 1) % totalItems;
+      items[currentIndex].classList.replace('opacity-0', 'opacity-100');
+    }
+
+    setInterval(showNextItem, 5000);
+  })();
+</script></section><section class="py-24 px-6 relative">
 <div class="max-w-4xl mx-auto text-center">
 <div class="w-px h-24 bg-gradient-to-b from-transparent via-primary/50 to-transparent mx-auto mb-12"></div>
 <h2 class="text-3xl md:text-5xl font-bold text-on-surface mb-8 serif leading-tight">
